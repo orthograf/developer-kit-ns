@@ -1,10 +1,11 @@
 {extends file="_index.tpl"}
 
-{block name="layout_vars"}
-    {$menu_content='create'}		
-{/block}
-
 {block name="layout_content"}
+
+<div class="action-header">
+	{include file='menus/menu.create.content.tpl'}
+</div>
+
 {include file='editor.tpl'}
 
 <script type="text/javascript">
