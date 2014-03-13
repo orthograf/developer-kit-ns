@@ -1,8 +1,10 @@
-{include file='header.tpl'}
-{include file='menu.talk.tpl'}
+{extends file="_index.tpl"}
 
+{block name="layout_content"}
 
-{include file='actions/ActionTalk/friends.tpl'}
+    {include file='menus/menu.talk.tpl'}
+
+    {include file='actions/ActionTalk/friends.tpl'}
 
 {hook run='talk_add_begin'}
 
@@ -37,4 +39,4 @@
 {hook run='talk_add_end'}
 
 
-{include file='footer.tpl'}
+{/block}
