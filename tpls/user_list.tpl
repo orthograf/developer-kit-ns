@@ -54,7 +54,7 @@
 					{if $sUserListEmpty}
 						{$sUserListEmpty}
 					{else}
-						{$aLang.user_empty}
+						<div class="alert alert-info">{$aLang.user_empty}</div>
 					{/if}
 				</td>
 			</tr>
