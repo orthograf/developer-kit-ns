@@ -1,0 +1,80 @@
+/* -------------------------------------------------------------------
+	ОБЩИЕ СТИЛИ
+------------------------------------------------------------------- */
+
+/* Голосование 
+---------------------------------------------------- */
+.vote .vote-count 							{ display: inline-block; color: #999999; }
+.vote .vote-count a 						{ text-decoration: none; color: #999999; outline: none; }
+
+.vote.vote-count-positive .vote-count 		{ color: #468847; }
+.vote.vote-count-negative .vote-count 		{ color: #b94a48; }
+
+.vote .vote-up,
+.vote .vote-down 							{ display: inline-block; cursor: pointer; }
+
+.vote .vote-up:hover 						{ color: #468847; text-decoration: none; }
+.vote .vote-down:hover 						{ color: #b94a48; text-decoration: none; }
+
+.vote.voted.voted-up 	.vote-up 			{ color: #468847; }
+.vote.voted.voted-down 	.vote-down 			{ color: #b94a48; }
+
+.vote.voted.voted-up 	.vote-down:hover 	{ color: #b94a48; }
+.vote.voted.voted-down 	.vote-up:hover 		{ color: #468847; }
+
+.vote-topic-info li i 						{ margin-right: 5px; }
+
+
+/* Избранное 
+---------------------------------------------------- */
+.favourite 			{ display: inline-block; cursor: pointer; }
+.favourite.active 	{ color: #c09853; }
+.favourite:hover 	{ text-decoration: none; }
+
+/* Список пользователей 
+---------------------------------------------------- */
+.user-list-avatar li 		{ width: 48px; margin-bottom: 10px; }
+.user-list-avatar li img	{ display: block; }
+
+
+/* Облако тегов 
+---------------------------------------------------- */
+.tag-cloud 					{ text-align: center; }
+.tag-cloud li 				{ line-height: 24px; }
+.tag-cloud li .tag-size-1 	{ font-size: 12px; }
+.tag-cloud li .tag-size-2 	{ font-size: 12px; }
+.tag-cloud li .tag-size-3 	{ font-size: 14px; }
+.tag-cloud li .tag-size-4 	{ font-size: 14px; }
+.tag-cloud li .tag-size-5 	{ font-size: 18px; }
+.tag-cloud li .tag-size-6 	{ font-size: 18px; }
+.tag-cloud li .tag-size-7 	{ font-size: 20px; }
+.tag-cloud li .tag-size-8 	{ font-size: 20px; }
+.tag-cloud li .tag-size-9 	{ font-size: 22px; }
+.tag-cloud li .tag-size-10 	{ font-size: 22px; }
+
+
+/* Item List 
+---------------------------------------------------- */
+.item-list 					{ border-top: 1px solid #eeeeee; }
+.item-list li 				{ min-height: 36px; padding: 10px 0 10px 46px; border-bottom: 1px solid #eeeeee; position: relative; zoom: 1; }
+.item-list li p 			{ margin-bottom: 0; }
+.item-list li i 			{ margin-right: 2px; }
+.item-list li .avatar 		{ position: absolute; top: 10px; left: 0; margin-right: 10px; width: 36px; height: 36px; }
+.item-list li .author 		{ margin-right: 5px; color: #333333; text-decoration: underline; }
+.item-list li .blog-name 	{ text-decoration: underline; }
+.item-list li .stream-topic { text-decoration: underline; }
+.item-list li .blog-top 	{ text-decoration: underline; }
+
+
+/* Разное
+---------------------------------------------------- */
+.loader { background: #f5f5f5 url(../images/loader.gif) 50% 50% no-repeat; }
+
+.user, .ls-user { text-decoration: underline; }
+
+.ls-user:before { content: ''; display: inline-block; width: 14px; height: 14px; margin-right: 3px; background: url(../images/icon-user.png) 0 0 no-repeat; vertical-align: text-top; }
+
+.wrapper-content.wrapper-content-dark 	{ background-color: #f0f0f0; }
+
+a.blogs-search, a.people-search, a.tags-search 						{ position: absolute; right: 0; top: 5px; }
+a.blogs-search:hover, a.people-search:hover, a.tags-search:hover 	{ text-decoration: none; }

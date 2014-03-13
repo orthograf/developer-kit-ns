@@ -1,0 +1,30 @@
+/* -------------------------------------------------------------------
+	ФОРМАТИРОВАННЫЙ ТЕКСТ
+------------------------------------------------------------------- */
+
+.text { overflow: hidden; zoom: 1; }
+
+.text a 		{ text-decoration: underline; }
+.text a:hover 	{ text-decoration: none; }
+.text a:visited { color: #993399; }
+
+
+.text q { quotes: none; }
+
+.text q:before,
+.text q:after,
+.text blockquote:before,
+.text blockquote:after { content: ""; }
+
+.text dfn 	{ font-style: italic; }
+.text ins 	{ background: #ffff99; color: #000000; text-decoration: none; }
+.text mark 	{ background: #ffff00; color: #000000; font-style: italic; font-weight: bold; }
+
+
+.text img[align="right"] 	{ margin: 4px 0 10px 15px; }
+.text img[align="left"] 	{ margin: 4px 15px 10px 0; }
+.text img.image-center 		{ display: block; margin: 10px auto; }
+
+.text object,
+.text iframe,
+.text img { max-width: 100%; }
