@@ -21,19 +21,23 @@
 			<a href="#" id="foto-remove" class="link-dotted text-error" onclick="return ls.user.removeFoto();" style="{if !$oUserCurrent->getProfileFoto()}display:none;{/if}">{$aLang.settings_profile_foto_delete}</a>
 		</p>
 
-		<div class="modal modal-upload-photo" id="foto-resize">
-			<header class="modal-header">
-				<h3>{$aLang.uploadimg}</h3>
-			</header>
-			
-			<div class="modal-body">
-				<img src="" alt="" id="foto-resize-original-img"><br />
-				<button type="submit" class="btn btn-primary" onclick="return ls.user.resizeFoto();">{$aLang.settings_profile_avatar_resize_apply}</button>
-				<button type="submit" class="btn" onclick="return ls.user.cancelFoto();">{$aLang.settings_profile_avatar_resize_cancel}</button>
+		<div class="modal fade in modal-upload-photo" id="foto-resize">
+				<div class="modal-dialog">
+					<div class="modal-content">
+				
+						<header class="modal-header">
+							<h4 class="modal-title">{$aLang.uploadimg}</h4>
+						</header>
+
+						<div class="modal-body">
+							<img src="" alt="" id="foto-resize-original-img"><br />
+							<button type="submit" class="btn btn-success" onclick="return ls.user.resizeFoto();">{$aLang.settings_profile_avatar_resize_apply}</button>
+							<button type="submit" class="btn btn-default" onclick="return ls.user.cancelFoto();">{$aLang.settings_profile_avatar_resize_cancel}</button>
+						</div>
+
+					</div>
+				</div>
 			</div>
-			
-			<footer class="modal-footer"></footer>
-		</div>
 	{/if}
 </section>
 
