@@ -1,18 +1,16 @@
 {extends file="_index.tpl"}
 
-{if $sEvent=='add'}
-	{block name="layout_vars"}
-		{if $sEvent=='add'}
-			{$menu_content="create"}
-		{/if}
-	{/block}
-{else}
-	<div class="action-header">
-		{include file='menus/menu.blog_edit.tpl'}
-	</div>	
-{/if}
+{block name="layout_vars"}
+    {if $sEvent=='add'}
+        {$menu_content="create"}
+    {/if}
+{/block}
 
 {block name="layout_content"}
+
+{if $sEvent!='add'}
+	{include file='menus/menu.blog_edit.tpl'}
+{/if}
 
 {include file='editor.tpl' sImgToLoad='blog_description' sSettingsTinymce='ls.settings.getTinymceComment()' sSettingsMarkitup='ls.settings.getMarkitupComment()'}
 	
