@@ -1,5 +1,7 @@
-{include file='header.tpl'}
-{include file='menu.blog_edit.tpl'}
+{extends file="_index.tpl"}
+
+{block name="layout_content"}
+{include file='menus/menu.blog_edit.tpl'}
 
 {if $aBlogUsers}
 	<form method="post" enctype="multipart/form-data" class="mb-20">
@@ -48,4 +50,4 @@
 {/if}
 
 
-{include file='footer.tpl'}
+{/block}
