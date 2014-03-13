@@ -12,7 +12,7 @@
 	<div class="content" id="text_preview"></div>
 </div>
 
-{include file='inc.editor.tpl' sImgToLoad='talk_text'}
+{include file='editor.tpl' sImgToLoad='talk_text'}
 
 <form action="" method="POST" enctype="multipart/form-data" class="wrapper-content form-actions">
 	{hook run='form_add_talk_begin'}
