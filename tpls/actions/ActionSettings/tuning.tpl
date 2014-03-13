@@ -1,7 +1,8 @@
-{include file='header.tpl'}
+{extends file="_index.tpl"}
 
+{block name="layout_content"}
 
-{include file='menu.settings.tpl'}
+{include file='menus/menu.settings.tpl'}
 
 {hook run='settings_tuning_begin'}
 
@@ -45,4 +46,4 @@
 
 {hook run='settings_tuning_end'}
 
-{include file='footer.tpl'}
+{/block}
