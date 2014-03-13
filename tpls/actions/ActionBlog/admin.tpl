@@ -46,7 +46,7 @@
 
 	{include file='paging.tpl' aPaging=$aPaging}
 {else}
-	{$aLang.blog_admin_users_empty}
+	<div class="alert alert-info">{$aLang.blog_admin_users_empty}</div>
 {/if}
 
 
