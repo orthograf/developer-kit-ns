@@ -1,6 +1,15 @@
-{include file='header.tpl' menu='people'}
-{include file='actions/ActionProfile/profile_top.tpl'}
-{include file='menu.profile_created.tpl'}
+{extends file="_index.tpl"}
+
+{block name="layout_vars"}
+    {$menu="people"}
+{/block}
+
+{block name="layout_content"}
+	
+	<div class="action-header">
+	{include file='actions/ActionProfile/profile_top.tpl'}
+	</div>
+
 {if $aNotes}
 	<table class="table table-profile-notes" cellspacing="0">
 		{foreach from=$aNotes item=oNote}
@@ -15,4 +24,4 @@
 	<div class="notice-empty">{$aLang.user_note_list_empty}</div>
 {/if}
 {include file='paging.tpl' aPaging=$aPaging}
-{include file='footer.tpl'}
+{/block}
