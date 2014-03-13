@@ -100,6 +100,8 @@
 						</div>
 		
 						<div id="avatar-resize" class="modal modal-upload-avatar">
+						<div class="modal-dialog">
+							<div class="modal-content">
 							<header class="modal-header">
 								<h3>{$aLang.uploadimg}</h3>
 							</header>
@@ -108,9 +110,10 @@
 								<p><img src="" alt="" id="avatar-resize-original-img"></p>
 								<button type="submit" class="btn btn-primary" onclick="return ls.user.resizeAvatar();">{$aLang.settings_profile_avatar_resize_apply}</button>
 								<button type="submit" class="btn" onclick="return ls.user.cancelAvatar();">{$aLang.settings_profile_avatar_resize_cancel}</button>
-							</div>
-							
+							</div>	
 							<footer class="modal-footer"></footer>
+							</div>
+						</div>
 						</div>
 					</div>
 				</div>
