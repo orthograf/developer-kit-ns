@@ -1,11 +1,20 @@
+{extends file="_index.tpl"}
+
 {if $sEvent=='add'}
-	{include file='header.tpl' menu_content='create'}
+	{block name="layout_vars"}
+		{if $sEvent=='add'}
+			{$menu_content="create"}
+		{/if}
+	{/block}
 {else}
-	{include file='header.tpl'}
-	{include file='menu.blog_edit.tpl'}
+	<div class="action-header">
+		{include file='menus/menu.blog_edit.tpl'}
+	</div>	
 {/if}
 
-{include file='inc.editor.tpl' sImgToLoad='blog_description' sSettingsTinymce='ls.settings.getTinymceComment()' sSettingsMarkitup='ls.settings.getMarkitupComment()'}
+{block name="layout_content"}
+
+{include file='editor.tpl' sImgToLoad='blog_description' sSettingsTinymce='ls.settings.getTinymceComment()' sSettingsMarkitup='ls.settings.getMarkitupComment()'}
 	
 <script type="text/javascript">
 	jQuery(document).ready(function($){
@@ -83,4 +92,4 @@
 </form>
 
 
-{include file='footer.tpl'}
+{/block}
