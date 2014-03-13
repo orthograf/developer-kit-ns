@@ -1,6 +1,8 @@
-{include file='header.tpl'}
-{include file='menu.talk.tpl'}
+{extends file="_index.tpl"}
 
+{block name="layout_content"}
+
+{include file='menus/menu.talk.tpl'}
 
 <section class="block">
 	<header class="block-header">
@@ -25,5 +27,4 @@
 	</div>
 </section>
 
-
-{include file='footer.tpl'}
+{/block}
