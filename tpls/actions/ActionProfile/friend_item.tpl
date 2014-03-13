@@ -10,19 +10,26 @@
 	<li id="add_friend_item"><a href="#"  title="{$aLang.user_friend_add}" onclick="return ls.user.addFriend(this,{$oUserProfile->getId()},'accept');">{$aLang.user_friend_add}</a></li>
 {elseif !$oUserFriend}
 	<div id="add_friend_form" class="modal">
+	
+	<div class="modal-dialog">
+        <div class="modal-content">
+		
 		<header class="modal-header">
 			<button type="button" class="close jqmClose" data-dismiss="modal" aria-hidden="true">&times;</button>
 			<h3>{$aLang.profile_add_friend}</h3>
 		</header>
 
-		<div class="modal-body">
-			<form onsubmit="return ls.user.addFriend(this,{$oUserProfile->getId()},'add');" class="modal-content">
-				<p><label for="add_friend_text">{$aLang.user_friend_add_text_label}</label>
-				<textarea id="add_friend_text" rows="3" class="input-block-level"></textarea></p>
+			<div class="modal-body">
+				<form onsubmit="return ls.user.addFriend(this,{$oUserProfile->getId()},'add');" class="modal-content">
+					<p><label for="add_friend_text">{$aLang.user_friend_add_text_label}</label>
+					<textarea id="add_friend_text" rows="3" class="input-block-level"></textarea></p>
 
-				<button type="submit" class="btn btn-primary">{$aLang.user_friend_add_submit}</button>
-			</form>
+					<button type="submit" class="btn btn-primary">{$aLang.user_friend_add_submit}</button>
+				</form>
+			</div>
 		</div>
+	</div>
+	
 	</div>
 	<li id="add_friend_item"><a href="#" title="{$aLang.user_friend_add}" id="add_friend_show">{$aLang.user_friend_add}</a></li>
 {else}
