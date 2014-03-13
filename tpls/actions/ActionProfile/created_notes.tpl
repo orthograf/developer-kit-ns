@@ -7,7 +7,8 @@
 {block name="layout_content"}
 	
 	<div class="action-header">
-	{include file='actions/ActionProfile/profile_top.tpl'}
+		{include file='actions/ActionProfile/profile_top.tpl'}
+		{include file='menus/menu.profile_created.tpl'}
 	</div>
 
 {if $aNotes}
