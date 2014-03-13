@@ -1,7 +1,13 @@
-{include file='header.tpl' menu='people'}
+{extends file="_index.tpl"}
 
-{assign var="oSession" value=$oUserProfile->getSession()}
-{assign var="oVote" value=$oUserProfile->getVote()}
+{block name="layout_vars"}
+    {$menu="people"}
+{/block}
+
+{block name="layout_content"}
+
+    {$oSession=$oUserProfile->getSession()}
+    {$oVote=$oUserProfile->getVote()}
 
 
 {include file='actions/ActionProfile/profile_top.tpl'}
@@ -49,4 +55,4 @@
 {/if}
 
 
-{include file='footer.tpl'}
+{/block}
