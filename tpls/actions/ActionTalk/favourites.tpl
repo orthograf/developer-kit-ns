@@ -1,6 +1,8 @@
-{include file='header.tpl'}
-{include file='menu.talk.tpl'}
+{extends file="_index.tpl"}
 
+{block name="layout_content"}
+
+{include file='menus/menu.talk.tpl'}
 
 {if $aTalks}
 	<table class="table table-talk">
@@ -58,4 +60,4 @@
 
 
 {include file='paging.tpl' aPaging=$aPaging}
-{include file='footer.tpl'}
+{/block}
