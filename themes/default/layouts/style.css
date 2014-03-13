@@ -96,6 +96,11 @@ body.light .site-info .site-name a:hover { color: #ff4136; text-decoration: none
 #footer .footer-bottom { background-color: #080808; font-size: 12px; }
 #footer .footer-bottom .container { padding-bottom: 20px; padding-top: 20px; }
 
+/* FORM-ACTIONS */
+.form-actions{padding:19px 20px 20px;margin-top:20px;margin-bottom:20px;background-color:#fff; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02);}
+.form-actions:before,
+.form-actions:after{display:table;line-height:0;content:""}
+.form-actions:after{clear:both}
 
 /* OTHERS */
 a.blogs-search, a.people-search, a.tags-search 						{ position: absolute; right: 0; top: 5px; }
@@ -107,4 +112,3 @@ a.blogs-search:hover, a.people-search:hover, a.tags-search:hover 	{ text-decorat
 .wrapper-content.wrapper-content-dark 	{ background-color: #f0f0f0; }
 .user-list-avatar li 		{ width: 48px; margin-bottom: 10px; }
 .user-list-avatar li img	{ display: block; }
-
