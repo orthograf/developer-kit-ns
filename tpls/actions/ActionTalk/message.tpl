@@ -1,7 +1,10 @@
-{include file='header.tpl'}
-{include file='menu.talk.tpl'}
+{extends file="_index.tpl"}
 
-{assign var="oUser" value=$oTalk->getUser()}
+{block name="layout_content"}
+    <div class="action-header">
+        {include file='menus/menu.talk.tpl'}
+    </div>
+    {$oUser=$oTalk->getUser()}
 
 <article class="topic topic-type-talk">
 	<header class="topic-header">
@@ -59,4 +62,4 @@
 {/if}
 
 
-{include file='footer.tpl'}
+{/block}
