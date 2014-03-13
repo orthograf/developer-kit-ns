@@ -1,6 +1,8 @@
-{include file='header.tpl'}
-{include file='menu.settings.tpl'}
+{extends file="_index.tpl"}
 
+{block name="layout_content"}
+
+{include file='menus/menu.settings.tpl'}
 
 <script type="text/javascript">
 	jQuery(document).ready(function($){
@@ -219,5 +221,4 @@
 
 {hook run='settings_profile_end'}
 
-
-{include file='footer.tpl'}
+{/block}
