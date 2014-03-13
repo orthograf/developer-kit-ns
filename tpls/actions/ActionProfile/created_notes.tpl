@@ -21,7 +21,7 @@
 		{/foreach}
 	</table>
 {else}
-	<div class="notice-empty">{$aLang.user_note_list_empty}</div>
+	<div class="notice-empty alert alert-info">{$aLang.user_note_list_empty}</div>
 {/if}
 {include file='paging.tpl' aPaging=$aPaging}
 {/block}
