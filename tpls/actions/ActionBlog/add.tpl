@@ -21,7 +21,7 @@
 	});
 </script>
 
-<form method="post" enctype="multipart/form-data" class="wrapper-content form-actions">
+<form method="post" enctype="multipart/form-data" class="wrapper-content">
 	{hook run='form_add_blog_begin'}
 	
 	<input type="hidden" name="security_key" value="{$ALTO_SECURITY_KEY}" />
