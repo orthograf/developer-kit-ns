@@ -1,8 +1,8 @@
 {extends file="_index.tpl"}
 
-{block name="layout_vars"}
+{* block name="layout_vars"
     $noShowSystemMessage=false
-{/block}
+block *}
 
 {block name="layout_content"}
 
