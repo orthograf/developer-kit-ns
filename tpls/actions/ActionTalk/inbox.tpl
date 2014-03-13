@@ -1,5 +1,12 @@
-{include file='header.tpl' noShowSystemMessage=false}
-{include file='menu.talk.tpl'}
+{extends file="_index.tpl"}
+
+{block name="layout_vars"}
+    $noShowSystemMessage=false
+{/block}
+
+{block name="layout_content"}
+
+{include file='menus/menu.talk.tpl'}
 
 
 {if $aTalks}
@@ -81,4 +88,4 @@
 
 
 {include file='paging.tpl' aPaging=$aPaging}
-{include file='footer.tpl'}
+{/block}
