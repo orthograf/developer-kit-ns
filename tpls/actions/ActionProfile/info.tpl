@@ -1,10 +1,15 @@
+{extends file="_index.tpl"}
 
-{assign var="sMenuItemSelect" value='profile'}
-{include file='header.tpl'}
+{block name="layout_vars"}
+    {$menu="people"}
+    {$sMenuItemSelect="profile"}
+{/block}
 
-{assign var="oSession" value=$oUserProfile->getSession()}
-{assign var="oVote" value=$oUserProfile->getVote()}
-{assign var="oGeoTarget" value=$oUserProfile->getGeoTarget()}
+{block name="layout_content"}
+
+{$oSession=$oUserProfile->getSession()}
+{$oVote=$oUserProfile->getVote()}
+{$oGeoTarget=$oUserProfile->getGeoTarget()}
 
 {include file='actions/ActionProfile/profile_top.tpl'}
 
@@ -201,4 +206,4 @@
     </div>
 </div>
 
-{include file='footer.tpl'}
+{/block}
