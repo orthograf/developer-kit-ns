@@ -53,8 +53,6 @@ onchange="ls.subscribe.toggle('{$sTargetType}_new_comment','{$iTargetId}','',thi
 			{section name=closelist2 loop=$nesting+1}</div>{/section}    
 		{/if}
 	{/foreach}
-</div>				
-	
 	
 {include file='comment_paging.tpl' aPagingCmt=$aPagingCmt}
 
@@ -108,3 +106,4 @@ onclick="ls.comments.toggleCommentForm(0); return false;">{$sNoticeCommentAdd}</
 		{$aLang.comment_unregistered}
 	{/if}
 {/if}
+</div>	
