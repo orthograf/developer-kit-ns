@@ -22,7 +22,7 @@
 		</header>
 		
 			<div class="modal-body">
-				<form action="{router page='blog'}delete/{$oBlog->getId()}/" method="POST" class="modal-content">
+				<form action="{router page='blog'}delete/{$oBlog->getId()}/" method="POST">
 					<p><label for="topic_move_to">{$aLang.blog_admin_delete_move}:</label>
 					<select name="topic_move_to" id="topic_move_to" class="input-block-level">
 						<option value="-1">{$aLang.blog_delete_clear}</option>
